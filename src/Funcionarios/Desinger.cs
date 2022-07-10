@@ -1,4 +1,4 @@
-﻿namespace bytebank_adm.Funcionario;
+﻿namespace bytebank_adm.Funcionarios;
 
 public class Desinger : Funcionario
 {

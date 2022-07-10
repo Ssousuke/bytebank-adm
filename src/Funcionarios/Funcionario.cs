@@ -1,5 +1,4 @@
-﻿namespace bytebank_adm.Funcionario;
-
+﻿namespace bytebank_adm.Funcionarios;
 public abstract class Funcionario
 {
     public string Nome { get; }

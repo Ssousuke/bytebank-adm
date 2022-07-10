@@ -1,11 +1,10 @@
-﻿namespace bytebank_adm.Funcionario;
+﻿namespace bytebank_adm.Funcionarios;
 
-public class Diretor : Funcionario
+public class Auxiliar: Funcionario
 {
-    public Diretor(string nome, string cpf, double salario) : base(nome, cpf, salario)
+    public Auxiliar(string nome, string cpf, double salario) : base(nome, cpf, salario)
     {
     }
-
     public override double AumentaSalario()
     {
         return Salario *= 1.15;
