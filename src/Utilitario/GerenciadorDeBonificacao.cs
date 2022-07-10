@@ -1,10 +1,10 @@
-﻿using bytebank.Funcionario;
+﻿namespace bytebank_adm.Utilitario;
 
 public class GerenciadorDeBonificacao
 {
     public double TotalBonificacao { get; set; }
 
-    public void RegistrarBonificaco(Funcionario funcionario)
+    public void RegistrarBonificaco(Funcionario.Funcionario funcionario)
     {
         this.TotalBonificacao += funcionario.GetBonificacao();
     }
