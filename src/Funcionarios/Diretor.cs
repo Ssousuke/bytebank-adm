@@ -1,10 +1,12 @@
-﻿namespace bytebank_adm.Funcionarios;
+﻿using bytebank_adm.src.Funcionarios;
 
-public class Diretor : Funcionario
+namespace bytebank_adm.Funcionarios;
+
+public class Diretor : FuncionarioAutenticavel
 {
     public string Senha { get; set; }
 
-    public Diretor(string nome, string cpf, double salario) : base(nome, cpf, salario)
+    public Diretor(string nome, string cpf, double salario, string senha) : base(nome, cpf, salario, senha)
     {
     }
 
@@ -18,8 +20,8 @@ public class Diretor : Funcionario
         return Salario + 0.17;
     }
 
-    public bool Autenticacao(string login, string senha)
+    public bool Autenticacao(string senha)
     {
-        return Senha.Equals(senha) || CPF.Equals(login);
+        return Senha.Equals(senha);
     }
 }
